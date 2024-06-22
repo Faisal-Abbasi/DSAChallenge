@@ -1,12 +1,11 @@
 package com.faisal.dsa.graphs;
 
-import java.sql.SQLOutput;
+
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+
 
 /**
- * Implementation of  bi-directional graphs
+ * Implementation of  bidirectional graphs
  */
 public class Graphs {
     ArrayList<ArrayList<Integer>> graphs;
@@ -14,7 +13,7 @@ public class Graphs {
 
     Graphs(int nodes){
         noOfNodes=nodes;
-        graphs=new ArrayList<ArrayList<Integer>>();
+        graphs= new ArrayList<>();
         for(int i=0;i<nodes;i++){
             graphs.add(new ArrayList<>());
         }
@@ -36,7 +35,7 @@ public class Graphs {
 }
 
 class GraphsTest{
-    public static void main(String args[]){
+    public static void main(String[] args){
         Graphs graph=new Graphs(8);
         graph.addVertex(4,3);
         graph.addVertex(3,1);
